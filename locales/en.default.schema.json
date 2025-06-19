@@ -3001,6 +3001,27 @@
         },
         "full_width": {
           "label": "Full width"
+        },
+        "header_overlay": {
+          "content": "Overlay content"
+        },
+        "show_overlay_content": {
+          "label": "Show overlay content"
+        },
+        "overlay_title": {
+          "label": "Title"
+        },
+        "overlay_title_size": {
+          "label": "Title size"
+        },
+        "overlay_text": {
+          "label": "Text"
+        },
+        "overlay_button_label": {
+          "label": "Button label"
+        },
+        "overlay_button_link": {
+          "label": "Button link"
         }
       },
       "presets": {
