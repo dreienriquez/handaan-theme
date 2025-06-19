@@ -20,7 +20,13 @@
         "video_url": "https://www.youtube.com/watch?v=Og9VnINr5oc",
         "description": "Handaan by Drei",
         "full_width": true,
-        "color_scheme": "",
+        "show_overlay_content": true,
+        "overlay_title": "Bringing the Fiesta to your Table",
+        "overlay_title_size": "h1",
+        "overlay_text": "<p>Perfect for every celebration because every meal deserves to feel like a feast.</p>",
+        "overlay_button_label": "Shop now",
+        "overlay_button_link": "shopify://collections/all",
+        "color_scheme": "scheme-3",
         "padding_top": 0,
         "padding_bottom": 56
       }

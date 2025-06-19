@@ -60,26 +60,31 @@
   text-align: center;
   padding: 2rem;
   z-index: 1;
+  background-color: transparent;
   pointer-events: none;
 }
 
 .video-section__overlay-content > * {
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .video-section__overlay-text-wrapper {
   max-width: 70rem;
-  /* Example: Add a subtle background for readability if needed
-  background-color: rgba(var(--color-background), 0.7);
-  padding: 2rem;
-  border-radius: var(--popup-corner-radius); */
 }
 
 .video-section__overlay-title {
   margin-top: 0;
   margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: rgb(var(--color-foreground));
 }
 
 .video-section__overlay-text {
   margin-bottom: 2.5rem;
+  color: rgb(var(--color-foreground));
+  font-weight: bold;
+}
+
+deferred-media[loaded] .video-section__overlay-content > * {
+  pointer-events: auto;
 }
