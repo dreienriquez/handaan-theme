@@ -113,18 +113,20 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/9.png",
+            "title": "<strong>Special Offers</strong>",
+            "text": "<p>Enjoy exclusive discounts and limited-time deals on our best-selling Filipino party trays. Whether you're planning a small gathering or a grand celebration, our special offers make every handaan more affordable and delicious.</p>",
+            "link_label": "Learn More",
             "link": ""
           }
         },
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/10.png",
+            "title": "<strong>Order Process</strong>",
+            "text": "<p>Ordering is easy! Just choose your trays, select your preferred date and time, and check out. We'll prepare everything fresh and deliver right to your doorstep—ready to serve, no hassle.</p>",
+            "link_label": "Learn More",
             "link": ""
           }
         }
@@ -185,8 +187,8 @@
         "column_XdQTpx": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p><em>\"The flavors brought me back to family fiestas in the Philippines. Everything was fresh and perfectly seasoned!\"</em><br/><br/><strong>Marie Santos</strong></p><p>Nurse</p>",
             "link_label": "",
             "link": ""
           }
@@ -194,8 +196,8 @@
         "column_bRgPwL": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "⭐⭐⭐⭐",
+            "text": "<p><em>\"Super convenient for our office party! Everyone loved the kare-kare and lumpia trays.\"</em><br/><br/><strong>Jason Rivera</strong></p><p>Marketing Manager</p>",
             "link_label": "",
             "link": ""
           }
@@ -203,8 +205,8 @@
         "column_76UL8M": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p><em>\"This is now our go-to for every celebration. Fast, delicious, and authentic—highly recommended!\"</em><br/><br/><strong>Lara Dizon</strong></p><p>Interior Designer</p>",
             "link_label": "",
             "link": ""
           }
@@ -245,14 +247,14 @@
         "text_bV7Dnm": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Explore easy and authentic Filipino recipes—perfect for everyday meals or your next handaan.",
             "text_style": "body"
           }
         },
         "buttons_XCdxKX": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Learn more",
+            "button_label_1": "Explore our recipes",
             "button_link_1": "shopify://blogs/news",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -285,36 +287,40 @@
         "column_zGTjTK": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/instagram.webp",
+            "title": "Find us on Instagram",
+            "text": "<p>Stay connected on social for updates and more.</p>",
+            "link_label": "Follow us",
             "link": ""
           }
         },
         "column_MjPUTx": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/home.webp",
+            "title": "Get Updated",
+            "text": "<p>Subscribe for promos and new tray launches.</p>",
+            "link_label": "Follow us",
             "link": ""
           }
         },
         "column_zGnqwy": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/shake_hands.webp",
+            "title": "Inquiry",
+            "text": "<p>Have questions? Send us a message anytime.</p>",
+            "link_label": "Follow us",
             "link": ""
           }
         },
         "column_J4Aphe": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/faqs.webp",
+            "title": "Frequently Asked Questions",
+            "text": "<p>Quick answers to your common questions.</p>",
+            "link_label": "Follow us",
             "link": ""
           }
         }
