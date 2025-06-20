@@ -261,7 +261,9 @@
 }
 
 .facets__summary .icon-caret {
-  right: 0;
+  margin-left: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .facets__display {
