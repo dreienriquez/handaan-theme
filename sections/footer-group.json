@@ -24,21 +24,21 @@
         "link_list_CNdAFG": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Support",
             "menu": "footer-support-menu"
           }
         },
         "brand_information_ggxRzw": {
           "type": "brand_information",
           "settings": {
+            "heading": "Follow us",
             "show_social": true
           }
         },
-        "link_list_wh9AHb": {
-          "type": "link_list",
+        "newsletter_8Xbfdh": {
+          "type": "newsletter",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer-support-menu"
+            "heading": "Newsletter"
           }
         }
       },
@@ -46,7 +46,7 @@
         "footer-0",
         "link_list_CNdAFG",
         "brand_information_ggxRzw",
-        "link_list_wh9AHb"
+        "newsletter_8Xbfdh"
       ],
       "settings": {
         "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
