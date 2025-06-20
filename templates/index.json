@@ -117,7 +117,7 @@
             "title": "<strong>Special Offers</strong>",
             "text": "<p>Enjoy exclusive discounts and limited-time deals on our best-selling Filipino party trays. Whether you're planning a small gathering or a grand celebration, our special offers make every handaan more affordable and delicious.</p>",
             "link_label": "Learn More",
-            "link": ""
+            "link": "shopify://collections"
           }
         },
         "column2": {
@@ -127,7 +127,7 @@
             "title": "<strong>Order Process</strong>",
             "text": "<p>Ordering is easy! Just choose your trays, select your preferred date and time, and check out. We'll prepare everything fresh and deliver right to your doorstep—ready to serve, no hassle.</p>",
             "link_label": "Learn More",
-            "link": ""
+            "link": "shopify://collections"
           }
         }
       },
@@ -301,8 +301,8 @@
             "image": "shopify://shop_images/home.webp",
             "title": "Get Updated",
             "text": "<p>Subscribe for promos and new tray launches.</p>",
-            "link_label": "Follow us",
-            "link": ""
+            "link_label": "Subscribe",
+            "link": "shopify://pages/contact"
           }
         },
         "column_zGnqwy": {
@@ -311,8 +311,8 @@
             "image": "shopify://shop_images/shake_hands.webp",
             "title": "Inquiry",
             "text": "<p>Have questions? Send us a message anytime.</p>",
-            "link_label": "Follow us",
-            "link": ""
+            "link_label": "Ask us",
+            "link": "shopify://pages/contact"
           }
         },
         "column_J4Aphe": {
@@ -321,8 +321,8 @@
             "image": "shopify://shop_images/faqs.webp",
             "title": "Frequently Asked Questions",
             "text": "<p>Quick answers to your common questions.</p>",
-            "link_label": "Follow us",
-            "link": ""
+            "link_label": "Learn more",
+            "link": "shopify://pages/contact"
           }
         }
       },
