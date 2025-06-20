@@ -1030,6 +1030,15 @@
               "default": "<p>Share contact information, store details, and brand content with your customers.</p>"
             }
           }
+        },
+        "newsletter": {
+          "name": "Email signup",
+          "settings": {
+            "heading": {
+              "label": "Heading",
+              "default": "Subscribe to our emails"
+            }
+          }
         }
       },
       "settings": {
