@@ -1,7 +1,7 @@
 slider-component {
-  --desktop-margin-left-first-item: max(
-    5rem,
-    calc((100vw - var(--page-width) + 10rem - var(--grid-desktop-horizontal-spacing)) / 2)
+  --desktop-margin-left-first-item: min(
+    3rem,
+    calc((100vw - var(--page-width) - var(--grid-desktop-horizontal-spacing)) / 2)
   );
   position: relative;
   display: block;
@@ -336,8 +336,8 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button {
-  color: rgba(var(--color-foreground), 0.75);
-  background: transparent;
+  background-color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
   border: none;
   cursor: pointer;
   width: 44px;
@@ -345,18 +345,41 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity var(--duration-default) ease;
+}
+
+.slider-button:hover {
+  display: flex;
 }
 
 .slider-button:not([disabled]):hover {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
 }
 
 .slider-button .icon {
   height: 0.6rem;
 }
 
+.slider-button--prev {
+  left: 2rem;
+}
+
+.slider-button--next {
+  right: 2rem;
+}
+
+.slider-mobile-gutter:hover .slider-button {
+  opacity: 1;
+  transition: opacity var(--duration-default) ease;
+
+}
+
 .slider-button[disabled] .icon {
-  color: rgba(var(--color-foreground), 0.3);
+  color: rgba(var(--color-background), 0.3);
   cursor: not-allowed;
 }
 
