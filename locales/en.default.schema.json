@@ -1008,6 +1008,10 @@
             "paragraph": {
               "content": "Manage brand info in [theme settings](/editor?context=theme&category=brand%20information)"
             },
+            "heading": {
+              "label": "Heading",
+              "default": "Follow us"
+            },
             "show_social": {
               "label": "Social media icons",
               "info": "[Manage social accounts](/editor?context=theme&category=social%20media)"
