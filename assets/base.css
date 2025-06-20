@@ -773,6 +773,7 @@ summary::-webkit-details-marker {
 .title,
 .title-wrapper-with-link {
   margin: 3rem 0 2rem;
+  justify-self: center;
 }
 
 .title-wrapper-with-link .title {
