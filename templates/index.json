@@ -34,10 +34,10 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "frontpage",
         "products_to_show": 25,
         "title": "Featured products",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -46,8 +46,8 @@
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "color_scheme": "scheme-93eb3edc-33db-4690-98a2-584970dd3d0b",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
