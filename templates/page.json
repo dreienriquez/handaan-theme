@@ -15,50 +15,55 @@
         "heading_ceCYEF": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_d3xdEb": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_qn8UFX": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Where Every Table Feels Like Home",
+            "heading_size": "hxxl"
           }
         }
       },
       "block_order": [
-        "heading_ceCYEF",
-        "text_d3xdEb",
-        "buttons_qn8UFX"
+        "heading_ceCYEF"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/4.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
+        "show_text_box": false,
+        "color_scheme": "scheme-2",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
     },
+    "rich_text_AmGg9L": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4mjVRt": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Handaan by Drei</strong> is a Filipino party tray service that brings the taste of home to your celebrations. We offer authentic, ready-to-serve dishes made with love and tradition—perfect for family gatherings, office parties, and every special moment in between.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4mjVRt"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -70,33 +75,25 @@
         "heading_BgbPmA": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "It All Started at the Table",
             "heading_size": "h1"
           }
         },
         "text_XY8NEP": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Handaan by Drei was born from a simple idea—a table where families come together to share food, laughter, and stories. What began as a passion for homecooked meals turned into a mission to make every gathering feel like home.</p>",
             "text_style": "body"
-          }
-        },
-        "button_FCLiye": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_BgbPmA",
-        "text_XY8NEP",
-        "button_FCLiye"
+        "text_XY8NEP"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/3_bcc41133-473f-4e8c-b271-df84003238f8.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -105,8 +102,8 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-93eb3edc-33db-4690-98a2-584970dd3d0b",
+        "color_scheme": "scheme-93eb3edc-33db-4690-98a2-584970dd3d0b",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -114,6 +111,7 @@
   },
   "order": [
     "image_banner_KXwWEm",
+    "rich_text_AmGg9L",
     "main",
     "image_with_text_jw8Qte"
   ]
