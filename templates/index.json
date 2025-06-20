@@ -36,7 +36,7 @@
       "settings": {
         "collection": "frontpage",
         "products_to_show": 25,
-        "title": "Featured products",
+        "title": "<strong>Featured products</strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -72,7 +72,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Handaan by Drei offers delicious, ready-to-serve Filipino party trays crafted with love and authentic flavors.",
             "text_style": "body"
           }
         },
@@ -94,13 +94,14 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "medium",
+        "image": "shopify://shop_images/1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
@@ -142,7 +143,7 @@
         "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
-        "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
+        "color_scheme": "scheme-93eb3edc-33db-4690-98a2-584970dd3d0b",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 100,
@@ -153,9 +154,9 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "",
+        "collection": "frontpage",
         "products_to_show": 3,
-        "title": "Featured collection",
+        "title": "<strong>Our Favorites</strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -165,14 +166,14 @@
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
+        "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
+        "quick_add": "standard",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 56,
         "padding_bottom": 56
@@ -224,7 +225,7 @@
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "color_scheme": "scheme-ca8b15a0-73e2-43e4-96e5-ae10f278ec9c",
+        "color_scheme": "scheme-93eb3edc-33db-4690-98a2-584970dd3d0b",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 56,
