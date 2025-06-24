@@ -1,0 +1,45 @@
+{% assign desktop_image = section.settings.desktop_image | image_url: width: 2880 %}
+{% assign mobile_image = section.settings.mobile_image | image_url: width: 750 %}
+
+<img
+  loading="lazy"
+  width="2880"
+  height="979"
+  style="max-width: 100%; object-fit: cover; object-position: 50% 50% !important;"
+  alt="{{ section.settings.image_alt }}"
+  src="{{ desktop_image }}"
+  srcset="
+    {{ mobile_image }} 750w,
+    {{ desktop_image }} 2880w
+  "
+  sizes="(max-width: 749px) 100vw, 2880px"
+>
+
+{% schema %}
+{
+  "name": "Responsive Image Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt Text",
+      "default": "Responsive image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive Image"
+    }
+  ]
+}
+{% endschema %}
