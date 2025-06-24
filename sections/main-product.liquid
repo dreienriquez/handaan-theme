@@ -94,22 +94,9 @@
 
                 <img
                   loading="lazy"
+                  style="max-width: 100%; object-fit: cover;"
                   alt="{{ block.settings.image_alt }}"
-                  width="1100"
-                  height="274"
-                  src="{{ base_image | replace: 'width=1100', 'width=1445' }}"
-                  srcset="
-                    {{ block.settings.image | image_url: width: 550 }} 550w,
-                    {{ block.settings.image | image_url: width: 750 }} 750w,
-                    {{ block.settings.image | image_url: width: 1100 }} 1100w
-                  "
-                  sizes="
-                    (max-width: 749px) calc(100vw - 2rem),
-                    (min-width: 750px) and (max-width: 1199px) calc((100vw - 11.5rem) / 2),
-                    calc((1200px - 10rem) / 2)
-                  "
-                  class="js"
-                  style="max-width: 1100px; max-height: 274px; object-fit: cover; object-position: 50% 50% !important;"
+                  src="{{ base_image }}"
                 >
               {%- when 'text' -%}
                 <p

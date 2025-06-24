@@ -52,6 +52,13 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "responsive_image_wjJG7N": {
+          "type": "responsive_image",
+          "settings": {
+            "image": "shopify://shop_images/Yg6-33CM.webp",
+            "image_alt": "Responsive image"
+          }
         }
       },
       "block_order": [
@@ -62,7 +69,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "responsive_image_wjJG7N"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -78,6 +86,15 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "responsive_image_BGefpF": {
+      "type": "responsive-image",
+      "name": "Responsive Image",
+      "settings": {
+        "desktop_image": "shopify://shop_images/icons-pc_499583bb-3c88-4fb2-97cf-683587f3ce67.webp",
+        "mobile_image": "shopify://shop_images/mobile.webp",
+        "image_alt": "Responsive image"
       }
     },
     "image-with-text": {
@@ -201,6 +218,7 @@
   },
   "order": [
     "main",
+    "responsive_image_BGefpF",
     "image-with-text",
     "multicolumn_jKmrk3",
     "related-products"
