@@ -17,6 +17,8 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__quantity-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-item__totals {
@@ -38,7 +40,7 @@ cart-items .title-wrapper-with-link {
 
 .cart-item__image {
   height: auto;
-  max-width: calc(10rem / var(--font-body-scale));
+  max-width: 150;
 }
 
 @media screen and (min-width: 750px) {
@@ -303,7 +305,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__media {
-    width: 10rem;
+    width: 15rem;
   }
 
   .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
