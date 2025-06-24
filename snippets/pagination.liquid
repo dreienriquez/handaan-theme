@@ -50,7 +50,9 @@
                   aria-current="page"
                   aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
                 >
-                  {{- part.title -}}
+                  <span style="display: inline-block; padding: 10px 16px; background: #e5e5e5; margin: 0 4px;">
+                    {{- part.title -}}
+                  </span>
                 </a>
               {%- else -%}
                 <span class="pagination__item">{{ part.title }}</span>

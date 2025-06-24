@@ -1,0 +1,78 @@
+{% paginate blog.articles by 4 %}
+  <section class="page-width" style="margin: 0 auto;">
+    <div style="display: flex; flex-direction: row; gap: 1.5rem">
+      <div style="flex: 1;">
+        {% for article in blog.articles %}
+          <div style="display: flex; flex-direction: row; gap: 1.5rem; padding: 5rem 0;">
+            <div style="display: flex; flex: 0.25; margin: 0 auto; padding-top: 22px;">
+              <span style="font-size: 12px; color: #666;">
+                {{ article.published_at | date: '%B %d, %Y' }}
+              </span>
+            </div>
+            <div style="display: flex; flex: 1; flex-wrap: wrap">
+              <article>
+                {% if article.image != blank %}
+                  <a href="{{ article.url }}">
+                    <img
+                      src="{{ article.image | image_url: width: 1100 }}"
+                      alt="{{ article.title }}"
+                      style="width: 100%; height: auto; object-fit: cover; margin-bottom: 20px;"
+                      loading="lazy"
+                    >
+                  </a>
+                {% endif %}
+
+                <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+                  <a href="{{ article.url }}" style="color: #000; text-decoration: none;">
+                    {{ article.title }}
+                  </a>
+                </h2>
+                <p style="font-size: 14px; color: #333; margin-bottom: 8px;">By {{ article.author }}</p>
+                <p style="font-size: 16px; color: #444; margin-bottom: 16px;">
+                  {{ article.content | strip_html | truncatewords: 30 }}
+                </p>
+                <a href="{{ article.url }}" style="color: #0056b3; font-weight: 600; text-decoration: underline;">
+                  Read more
+                </a>
+              </article>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div style="padding: 5rem 0;">
+        <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 16px;">Recent articles</h3>
+        <ul style="list-style: none; padding: 0;">
+          {% for article in blog.articles limit: 4 %}
+            <li style="margin-bottom: 20px;">
+              <a
+                href="{{ article.url }}"
+                style="font-size: 14px; color: #000; text-decoration: none; font-weight: 500;"
+              >
+                {{ article.title }}
+              </a>
+              <br>
+              <span style="font-size: 12px; color: #888;">
+                {{ article.published_at | date: '%B %d, %Y' }}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </section>
+{% endpaginate %}
+
+{% schema %}
+{
+  "name": "Blog with Recent Posts",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Blog with Recent Posts"
+    }
+  ]
+}
+{% endschema %}

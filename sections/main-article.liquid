@@ -1,10 +1,10 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template">
+<article class="article-template" style="margin: 5rem 10rem">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
-        <div class="page-width page-width--narrow">
+        <div class="">
           {% render block %}
         </div>
       {%- when 'featured_image' -%}
@@ -43,7 +43,7 @@
 
       {%- when 'title' -%}
         <header
-          class="page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+          class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
           {{ block.shopify_attributes }}
         >
           <h1
@@ -64,16 +64,93 @@
         </header>
 
       {%- when 'content' -%}
-        <div
-          class="article-template__content page-width page-width--narrow rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {{ block.shopify_attributes }}
-        >
-          {{ article.content }}
+        <div class="" style="display: flex; flex-direction: row; gap: 5rem">
+          <div style="display: flex; flex-direction: column; flex: 1">
+            <div
+              class="article-template__content rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {{ block.shopify_attributes }}
+              style="display: flex; flex: 1"
+            >
+              {{ article.content }}
+            </div>
+            <div>
+              <div style="margin-top: 40px;">
+                <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 12px;">SHARE</h4>
+                <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 30px;">
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u={{ article.url | prepend: shop.url }}"
+                    target="_blank"
+                    rel="noopener"
+                    style="color: #000; font-size: 20px;"
+                    ><span class="svg-wrapper">
+                      {{- 'icon-facebook.svg' | inline_asset_content -}}
+                    </span></a
+                  >
+                  <a
+                    href="https://twitter.com/intent/tweet?url={{ article.url | prepend: shop.url }}"
+                    target="_blank"
+                    rel="noopener"
+                    style="color: #000; font-size: 20px;"
+                    ><span class="svg-wrapper">
+                      {{- 'icon-twitter.svg' | inline_asset_content -}}
+                    </span></a
+                  >
+                  <a
+                    href="https://pinterest.com/pin/create/button/?url={{ article.url | prepend: shop.url }}&media={{ article.image | image_url }}&description={{ article.title }}"
+                    target="_blank"
+                    rel="noopener"
+                    style="color: #000; font-size: 20px;"
+                    ><span class="svg-wrapper">
+                      {{- 'icon-pinterest.svg' | inline_asset_content -}}
+                    </span></a
+                  >
+                </div>
+                <hr style="border: none; border-top: 1px solid #ddd;">
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                {% if blog.previous_article %}
+                  <a
+                    href="{{ blog.previous_article.url }}"
+                    style="text-decoration: none; font-size: 14px; color: #000;"
+                  >
+                    &larr; Older post
+                  </a>
+                {% else %}
+                  <span></span>
+                {% endif %}
+
+                {% if blog.next_article %}
+                  <a href="{{ blog.next_article.url }}" style="text-decoration: none; font-size: 14px; color: #000;">
+                    Newer post &rarr;
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; flex: 0.5">
+            <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 16px;">Recent articles</h3>
+            <ul style="list-style: none; padding: 0;">
+              {% for article in blog.articles limit: 4 %}
+                <li style="margin-bottom: 20px;">
+                  <a
+                    href="{{ article.url }}"
+                    style="font-size: 14px; color: #000; text-decoration: none; font-weight: 500;"
+                  >
+                    {{ article.title }}
+                  </a>
+                  <br>
+                  <span style="font-size: 12px; color: #888;">
+                    {{ article.published_at | date: '%B %d, %Y' }}
+                  </span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
 
       {%- when 'share' -%}
         <div
-          class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="article-template__social-sharing {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {{ block.shopify_attributes }}
         >
           {% assign share_url = request.origin | append: article.url %}
@@ -81,22 +158,11 @@
         </div>
     {%- endcase -%}
   {%- endfor -%}
-
-  <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-      <span class="icon-wrap">
-        <span class="svg-wrapper">
-          {{- 'icon-arrow.svg' | inline_asset_content -}}
-        </span>
-      </span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
-    </a>
-  </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div
         id="comments"
-        class="page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       >
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
